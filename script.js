@@ -224,7 +224,7 @@ function renderForecast(forecastData) {
     });
 
     // Convert to array and get the next 6 days (excluding today's full day)
-    const dailyArray = Object.values(dailyData).slice(1, 7); 
+    const dailyArray = Object.values(dailyData).slice(0, 7); 
     
     dailyArray.forEach(day => {
         const dayOfWeek = day.day;
